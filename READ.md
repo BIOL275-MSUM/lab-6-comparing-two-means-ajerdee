@@ -152,6 +152,8 @@ diff(ttest_results$estimate)
 > intervalof this mean difference. Show your code and write a sentence
 > giving your answer.
 
+ANSWER
+
 The mean difference in the number of species between areas is 1.8334 and
 the 95% confidence interval is -4.587031 to 8.253697.
 
@@ -198,6 +200,8 @@ fish_long %>%
 > Test the hypothesis that the tributaries have no effect on the number
 > of species of electric fish.
 
+ANSWER
+
 According to the t-test there is no signigicant difference between the
 species and the location due to p&gt;0.05. The difference between the
 means falls within the 95% confidence interval. With this being said, we
@@ -219,11 +223,13 @@ t.test(formula = species ~ location, data = fish_long)
     ## mean in group Downstream   mean in group Upstream 
     ##                 16.41667                 14.58333
 
-\#\#Question C
+## Question C
 
 > State the assumptions that you had to make to complete parts (A) and
 > (B). Create a graph to assess whether one of those assumptions was
 > met.
+
+ANSWER
 
 We assumed that the number of species were normally distributed, the
 measurements were taken from a random sample, and the standard deviation
@@ -346,6 +352,8 @@ ggplot(data = Crab, aes(x = type, y = temp)) +
 
 > Does body temperature varies among crab types? State the null and
 > alternative hypothesis, conduct an ANOVA, and interpret the results.
+
+ANSWER
 
 The null hypothesis is that the mean body temperature is equal between
 the crab types. The alternative hypothesis is that the mean body

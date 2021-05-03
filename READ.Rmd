@@ -46,6 +46,8 @@ diff(ttest_results$estimate)
 
 > What is the mean difference in the number of species between areas upstream and downstream of a tributary? What is the 95% confidence intervalof this mean difference. Show your code and write a sentence giving your answer.
 
+ANSWER
+
 The mean difference in the number of species between areas is 1.8334 and the 95% confidence interval is -4.587031 to 8.253697.
 
 
@@ -82,15 +84,19 @@ fish_long %>%
 
 > Test the hypothesis that the tributaries have no effect on the number of species of electric fish.
 
+ANSWER
+
 According to the t-test there is no signigicant difference between the species and the location due to p>0.05. The difference between the means falls within the 95% confidence interval. With this being said, we fail to reject the null hypothesis. 
 
 ```{r}
 t.test(formula = species ~ location, data = fish_long)
 ```
 
-##Question C
+## Question C
 
 > State the assumptions that you had to make to complete parts (A) and (B). Create a graph to assess whether one of those assumptions was met.
+
+ANSWER
 
 We assumed that the number of species were normally distributed, the measurements were taken from a random sample, and the standard deviation of the number of species were equivalent in both samples when performing the two-sample t-test. When looking at the graph below, the assumption that the number of species were normally distributed was not accurate. 
 
@@ -159,6 +165,8 @@ ggplot(data = Crab, aes(x = type, y = temp)) +
 
 ## Question E
 > Does body temperature varies among crab types? State the null and alternative hypothesis, conduct an ANOVA, and interpret the results.
+
+ANSWER 
 
 The null hypothesis is that the mean body temperature is equal between the crab types. The alternative hypothesis is that the mean body temperatureis different in at least one type of crab. The null hypothesis is rejected while the alternative hypothesis is accepted (p<0.05). The difference between the mean body temperature in at least one type of crab and the mean body temperature of the other types of crbas is significantlly statistically different.
 
